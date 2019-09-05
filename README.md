@@ -15,24 +15,32 @@ We've copied the questions from the lab here. Answer them below!
 
 ## Part B. Manually Blink a LED
 
-**a. What color stripes are on a 100 Ohm resistor?**
+**a. brown black brown gold **
  
-**b. What do you have to do to light your LED?**
+**b. I had to connect one end of the switch to 5V and the other to the LED and resistor in series**
 
 
 ## Part C. Blink a LED using Arduino
 
 ### 1. Blink the on-board LED
 
-**a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+**a. I didn't have to change any lines of code. I did have to configure the board type**
 
-**b. What line(s) of code do you need to change to change the rate of blinking?**
+**b. I had to change the delay between turning the LED on and off
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(12);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(12);                       // wait for a second
+}**
 
-**c. What circuit element would you want to add to protect the board and external LED?**
+**c. I would need to add a resistor device to protect the board and external LED**
  
-**d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
+**d. Below a delay of 15, it gets harder and harder to tell if there is a delay. I couldn't tell around a delay of 12. 
+To prove that the LED is still blinking, one can use a camera to see if it's flickering**
 
-**e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
+**e. https://github.com/sgc87/IDD-Fa18-Lab1/blob/master/Blink.ino**
 
 
 ### 2. Blink your LED
@@ -44,12 +52,14 @@ We've copied the questions from the lab here. Answer them below!
 
 ## Part D. Manually fade an LED
 
-**a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
+**a. Yes, the LED is glowing throughout the whole range of the potentiometer. This is because current is flowing
+no matter the resistance. In order for there to be no glow, the resistance would have to be so high that the 
+light is either not visible or does not meet the minimum current required to light up the LED. **
 
 
 ## Part E. Fade an LED using Arduino
 
-**a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
+**a. To make the code control the circuit, I had to change the value of variable int led from 9 to 11. **
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
