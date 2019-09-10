@@ -85,15 +85,21 @@ analogWrite is a PWM function where the input specifies the duty cycle of a PWM 
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
 
+Here is a rough schematic. The red is the added LED. 
 
+![Frankenlight Schematic](https://github.com/sgc87/IDD-Fa18-Lab1/blob/master/69964337_635284323545155_278662653600071680_n.jpg)
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 
-Yes, there is a processor on the device that centralizes the data input and outputs it to its radio antenna to the receiver. 
+Yes, there is a processor on the device that centralizes the data input and outputs it to its radio antenna to the receiver. The processor is circled in red, but under the capacitor in the picture. 
+
+![Frankenlight Computer](https://github.com/sgc87/IDD-Fa18-Lab1/blob/master/69868316_748237088931791_979148489315319808_n.jpg)
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
 There is an infrared optical sensor at the bottom of the mouse. It collects light reflected on the surface reflected by the infrared LED blaster on the device. There is also a scrollwheel, a scrollwheel button, right and left click buttons, and a mouse LED sampling rate button at the bottom. All inputs received on these sensors are relayed to the processor
+
+![Frankenlight Device](https://github.com/sgc87/IDD-Fa18-Lab1/blob/master/70291245_2446622165594817_6371284186308804608_n.jpg)
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
@@ -109,6 +115,8 @@ No information is not stored in the computer car mouse. There may be small cache
 I hotwired my additional LED from the two LEDs already on the computer car mouse that illuminate the headlights when the mouse is turned on. Since the tailights don't have lights on this device, I decided to add one working taillight. Being limited to one white LED, I was only able to add one working taillight. 
 
 I essentially connected another LED in the circuit in parallel. 
+
+![Frankenlight Placement](https://github.com/sgc87/IDD-Fa18-Lab1/blob/master/69732680_2936167329743349_2063788578080555008_n.jpg)
 
 ### 3. Build your light!
 
