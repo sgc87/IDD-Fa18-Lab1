@@ -10,7 +10,7 @@ We've copied the questions from the lab here. Answer them below!
 
 ## Part A. Set Up a Breadboard
 
-[insert a photo of your breadboard setup here]
+[Part A Breadboard](https://github.com/sgc87/IDD-Fa18-Lab1/blob/master/20190905_103013.jpg)
 
 
 ## Part B. Manually Blink a LED
